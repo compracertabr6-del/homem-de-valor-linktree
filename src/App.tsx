@@ -53,12 +53,12 @@ const PRODUCTS_BY_CATEGORY: Record<CategoryId, Product[]> = {
       tagline: "Conforto e bateria para o dia todo.",
     },
     {
-      id: "gadgets-fone-lenovo-xt62",
-      name: "Fone Bluetooth Lenovo Livepods XT62",
-      url: "https://mercadolivre.com/sec/2QMKGPq",
+      id: "gadgets-fone-xaiomi-",
+      name: "Fone sem fio Xaiomi",
+      url: "https://mercadolivre.com/sec/2vJwE1B",
       highlight: true,
       imageUrl:
-        "https://http2.mlstatic.com/D_NQ_NP_2X_676447-MLA95502873734_102025-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_802305-MLA95679505222_102025-F.webp",
       priceHint: "Aprox. R$ 90,00",
       tagline: "Som limpo e conexão estável.",
     },
