@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 type CategoryId =
-  type CategoryId =
   | "gadgets"
   | "barbear"
   | "perfumes"
