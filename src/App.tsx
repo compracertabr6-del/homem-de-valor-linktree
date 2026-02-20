@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 
 type CategoryId =
-  | "gadgets"
-  | "barbear"
-  | "perfumes"
-  | "relogios"
-  | "suplementos"
-  | "seguranca";
+  | "Gadgets"
+  | "Barbear"
+  | "Perfumes"
+  | "Relógio"
+  | "Suplementos"
+  | "Seguranca";
 
 type Product = {
   id: string;
