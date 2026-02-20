@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
 
+/**
+ * IDs das categorias – tudo minúsculo e sem acento
+ * para bater com o resto do código.
+ */
 type CategoryId =
   | "gadgets"
   | "barbear"
@@ -23,11 +27,11 @@ type ClicksState = Record<string, number>;
 const STORAGE_KEY = "homem_de_valor_clicks_v1";
 
 const CATEGORIES: { id: CategoryId; label: string }[] = [
-  { id: "gadgets", label: "Aparelhos & Gadgets" },
-  { id: "barbear", label: "Máquinas de barbear" },
   { id: "perfumes", label: "Perfumes masculinos" },
   { id: "relogios", label: "Relógios" },
   { id: "suplementos", label: "Suplementos" },
+  { id: "gadgets", label: "Aparelhos & Gadgets" },
+  { id: "barbear", label: "Máquinas de barbear" },
   { id: "seguranca", label: "Segurança para a família" },
 ];
 
@@ -461,7 +465,7 @@ function App() {
               <p className="mt-1 text-[11px] text-slate-400">
                 Seleção pessoal de produtos que eu realmente usaria.
               </p>
-              <p className="mt-2 text-xs uppercase tracking-[0.2em] text-emerald-300/90">
+              <p className="mt-2 text-[11px] uppercase tracking-[0.12em] text-emerald-300/90">
                 {currentCategoryLabel}
               </p>
             </div>
@@ -499,7 +503,7 @@ function App() {
             </p>
           </section>
 
-          {/* cards dos produtos – horizontal + glass/neon */}
+          {/* cards dos produtos */}
           <section className="space-y-3">
             {products.map((product) => {
               const count = clicks[product.id] || 0;
@@ -592,11 +596,11 @@ function App() {
               © {new Date().getFullYear()} Homem de Valor · Afiliado Mercado
               Livre
             </span>
-            <span className="text-[10px] text-slate-500">
+            <span className="text-[10px] text-slate-500 text-center">
               Produtos ofertados através do Mercado Livre. Valores aproximados,
               consulte a página da oferta para o preço atualizado.
             </span>
-            <span className="text-[10px] text-slate-500">
+            <span className="text-[10px] text-slate-500 text-center">
               Os cliques são contabilizados apenas neste dispositivo.
             </span>
           </section>
